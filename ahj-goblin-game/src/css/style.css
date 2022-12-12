@@ -1,0 +1,103 @@
+h2 {
+  margin: 0 0 5px;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(4, 150px);
+  gap: 1px 1px;
+}
+
+.cell {
+  border: 1px solid black;
+  border-radius: 5px
+}
+
+.cell-npc {
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/goblin.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hammer {
+  cursor: url("../img/hammer.png"), auto;
+}
+
+.hammer-click {
+  cursor: url("../img/hammer-click.png"), auto;
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.modal-body {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white;
+  top: calc(50% - 150px);
+  left: calc(50% - 150px);
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  z-index: 20;
+  box-shadow: 0 3px 5px 2px rgba(0, 0, 0, .3);
+}
+
+.modal-text {
+  text-align: center;
+  font-size: 32px;
+}
+
+.modal-button {
+  background-color: #2ecc71;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+
+.game-button-new-game {
+  text-decoration:none;
+  text-align:center;
+  padding:8px 16px;
+  border:solid 1px #004F72;
+  border-radius: 4px;
+  font:16px Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  margin-bottom: 10px;
+  color:#ffffff;
+  background-color:#3bc763;
+  background-image: -moz-linear-gradient(top, #3bc763 0%, #19a545 100%);
+  background-image: -webkit-linear-gradient(top, #3bc763 0%, #19a545 100%);
+  background-image: linear-gradient(top, #3bc763 0% ,#19a545 100%);
+  -webkit-box-shadow: 0 0 2px #bababa, inset 0 0 1px #ffffff;
+  -moz-box-shadow: 0 0 2px #bababa,  inset 0 0 1px #ffffff;
+  box-shadow: 0 0 2px #bababa, inset 0 0 1px #ffffff;
+  cursor: pointer;
+}

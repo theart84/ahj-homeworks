@@ -1,0 +1,51 @@
+#root {
+  font-family: 'Roboto', sans-serif;
+  padding: 50px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p20 {
+  padding: 20px;
+}
+
+.card-types {
+  display: flex;
+  list-style-type: none;
+}
+
+.card-item {
+  border: 1px solid #a7b8c6;
+  border-radius: 5px;
+  display: block;
+  width: 84px;
+  height: 52px;
+  margin-right: 10px;
+  background-position: center center;
+  background-size: contain;
+}
+
+.mir {
+  background-image: url('../img/mir.png');
+}
+
+.visa {
+  background-image: url('../img/visa.png');
+}
+
+.amex {
+  background-image: url('../img/amex.png');
+}
+
+.jcb {
+  background-image: url('../img/jcb.png');
+}
+
+.master {
+  background-image: url('../img/master.png');
+}
+
+.hidden {
+  opacity: 0.3;
+}

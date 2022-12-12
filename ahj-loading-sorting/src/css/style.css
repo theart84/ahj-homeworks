@@ -1,0 +1,15 @@
+.table-container {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table-cell {
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.table-cell--head {
+  border: 1px solid black;
+}
